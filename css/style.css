@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+     --primary-color: #222930;
+     --secondary-color: #4EB1BA;
+     --light-color: #E9E9E9;
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: "Playfair Display", serif;
+}
+
+hr {
+     display: none;
+}
+
+/* Header */
+header {
+     height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+}
+
+.title-img {
+     width: 150px;
+     height: auto;
+}
+
+/* Showcase */
+.img-part {
+     background-color: var(--light-color);
+}
+
+.showcase {
+     width: 100%;
+     position: relative;
+}
+
+.showcase #img-div {
+     display: flex;
+     flex-direction: column;
+}
+
+.showcase #img-div #img-caption {
+     font-size: 1.2rem;
+     padding: 30px 30px;
+}
+
+.showcase #img-div img {
+     width: 100%;
+}
+
+.showcase .map-callout {
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     width: 40%;
+}
+
+.showcase .map-callout img {
+     width: 100%;
+     border: 10px solid var(--primary-color);
+     border-radius: 50px;
+}
+
+.showcase .map-callout p {
+     width: 100%;
+     margin: auto;
+     background: rgba(0, 0, 0, 0.6);
+     border-radius: 10px;
+     padding: 10px 20px;
+     color: #fff;
+}
+
+/* Tribute info */
+#tribute-info {
+     background-color: var(--secondary-color);
+     color: var(--primary-color);
+}
+
+.tribute-pillar-1,
+.tribute-pillar-2 {
+     /* mix-blend-mode: overlay; */
+     justify-self: center;
+     height: 100%;
+}
+
+.tribute-pillar-1 img,
+.tribute-pillar-2 img {
+    width: 100%;
+}
+
+.tribute-content .tribute-title {
+     text-transform: uppercase;
+     font-size: 30px;
+}
+
+.tribute-content ul {
+     height: 100%;
+     padding: 10px 20px;
+}
+
+.tribute-content ul li {
+     font-size: 1.3rem;
+     line-height: 1.5;
+}
+
+/* Link to wiki */
+.link-div {
+     height: 150px;
+     position: relative;
+     background-color: var(--primary-color);
+     color: var(--light-color);
+}
+
+.link-div h1 {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.link-div h1 a {
+     text-decoration: none;
+     color: var(--secondary-color);
+}
+
+.link-div h1 a:hover {
+     color: var(--light-color);
+     border-bottom: solid 4px var(--secondary-color);
+}
+
+@media(max-width: 915px) {
+     .showcase .map-callout {
+          position: relative;
+          top: 0;
+          right: 0;
+          width: 100%;
+          display: flex;
+          margin-top: 10px;
+          padding: 10px 0;
+          background-color: var(--secondary-color);
+     }
+
+     .showcase .map-callout img,
+     .showcase .map-callout p {
+          width: 50%;
+          margin: 0 10px;
+     }
+
+     .showcase .map-callout p {
+          justify-self: center;
+          align-self: center;
+     }
+     
+     hr {
+          display: block;
+          background-color: var(--primary-color);
+          height: 20px;
+          border: none;
+     }
+
+     #tribute-info {
+          height: 500px;
+     }
+
+     .tribute-pillar-1,
+     .tribute-pillar-2 {
+          height: 100px;
+
+     }
+     
+     .tribute-pillar-1 img,
+     .tribute-pillar-2 img {
+          transform: rotate(90deg);
+     }
+}
