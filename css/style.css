@@ -88,14 +88,12 @@ header {
 
 .tribute-pillar-1,
 .tribute-pillar-2 {
-     /* mix-blend-mode: overlay; */
      justify-self: center;
      height: 100%;
-}
-
-.tribute-pillar-1 img,
-.tribute-pillar-2 img {
-    width: 100%;
+     background-image: url("../images/pillar-37382.png");
+     background-repeat: no-repeat;
+     width: 200px;
+     margin: auto;
 }
 
 .tribute-content .tribute-title {
@@ -169,17 +167,72 @@ header {
      }
 
      #tribute-info {
-          height: 500px;
+          height: auto;
      }
 
      .tribute-pillar-1,
      .tribute-pillar-2 {
           height: 100px;
-
      }
-     
+
      .tribute-pillar-1 img,
      .tribute-pillar-2 img {
-          transform: rotate(90deg);
+          display: none;
+     }
+
+     #tribute-info .tribute-content {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 15px;
+     }
+
+}
+
+/* Mobile phones */
+
+@media(max-width: 570px) {
+     header {
+          height: 170px;
+     }
+
+     header .title-img {
+          width: 100px;
+     }     
+
+     .showcase #img-div #img-caption {
+          font-size: 1rem;
+     }
+
+     .showcase .map-callout {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .showcase .map-callout img,
+     .showcase .map-callout p {
+          width: 100%;
+          margin: 10px 10px;
+     }
+
+     .showcase .map-callout p {
+          border-radius: 0;
+     }
+
+     #tribute-info .tribute-content {
+          width: 90%;
+          margin: auto;
+          margin-bottom: 15px;
+          font-size: 1rem;
+     }
+
+     #tribute-info .tribute-content .tribute-title {
+          font-size: 1.3rem;
+          margin: 10px 10px;
+     }
+
+     .link-div {
+          height: 150px;
+          font-size: 0.7rem;
      }
 }
