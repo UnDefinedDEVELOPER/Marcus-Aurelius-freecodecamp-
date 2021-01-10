@@ -55,7 +55,8 @@ header {
 }
 
 .showcase #img-div img {
-     width: 100%;
+     max-width: 100%;
+     display: block;
 }
 
 .showcase .map-callout {
